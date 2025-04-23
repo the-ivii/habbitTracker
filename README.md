@@ -1,6 +1,7 @@
 # HabbitTracker
+
 Project Overview:
-The Micro-Habit Tracker is a minimalist web application designed to help users build and maintain daily habits through visual tracking and motivation.
+The Habit Tracker is a minimalist web application designed to help users build and maintain daily habits through visual tracking and motivation.
 
 * Technologies Used:
 #Frontend:
