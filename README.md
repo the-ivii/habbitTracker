@@ -57,3 +57,11 @@ The Micro-Habit Tracker is a minimalist web application designed to help users b
 -Web Share API integration
 
 -Clipboard fallback for sharing 
+
+
+
+<img width="929" alt="Screenshot 2025-04-23 at 2 58 33 PM" src="https://github.com/user-attachments/assets/60b8baec-2967-4cc5-943d-cd3f328122f9" />
+
+
+<img width="837" alt="Screenshot 2025-04-23 at 3 00 17 PM" src="https://github.com/user-attachments/assets/01e6d485-52db-455d-a77f-470a0c4f73aa" />
+
