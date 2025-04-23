@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Micro-Habit Tracker</h1>
+            <div class="header-controls">
+                <button id="export-data" class="icon-btn" title="Export Data">
+                    <i class="fas fa-download"></i>
+                </button>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="motivational-quote">
+                <p id="quote-text">Loading your daily motivation...</p>
+            </section>
+
+            <section class="habits-section">
+                <div class="add-habit">
+                    <input type="text" id="habit-name" placeholder="Enter habit name">
+                    <input type="text" id="habit-emoji" placeholder="Add emoji" maxlength="2">
+                    <input type="number" id="habit-goal" placeholder="Weekly goal (days)" min="1" max="7">
+                    <button id="add-habit-btn">Add Habit</button>
+                </div>
+
+                <div class="habits-grid" id="habits-container">
+                    <!-- Habits will be dynamically added here -->
+                </div>
+            </section>
+
+            <section class="calendar-section">
+                <div class="calendar-header">
+                    <h2>Your Progress</h2>
+                    <div class="calendar-nav">
+                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <span id="current-month">Month Year</span>
+                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="calendar-grid" id="calendar-container">
+                    <!-- Calendar will be dynamically generated here -->
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <h2>Your Stats</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Current Streak</h3>
+                        <p id="current-streak">0 🔥</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Best Streak</h3>
+                        <p id="best-streak">0 🔥</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completion Rate</h3>
+                        <p id="completion-rate">0%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="goals-section">
+                <h2>Weekly Goals</h2>
+                <div class="goals-grid" id="goals-container">
+                    <!-- Goals will be dynamically added here -->
+                </div>
+            </section>
+
+            <section class="history-section">
+                <h2>Habit History</h2>
+                <div class="history-filters">
+                    <select id="history-habit-select">
+                        <option value="all">All Habits</option>
+                    </select>
+                    <select id="history-period-select">
+                        <option value="week">Last Week</option>
+                        <option value="month">Last Month</option>
+                        <option value="year">Last Year</option>
+                    </select>
+                </div>
+                <div class="history-chart">
+                    <canvas id="history-chart"></canvas>
+                </div>
+            </section>
+
+            <section class="social-section">
+                <h2>Community</h2>
+                <div class="social-grid">
+                    <div class="social-card">
+                        <h3>Share Progress</h3>
+                        <button id="share-progress" class="social-btn">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                    <div class="social-card">
+                        <h3>Community Stats</h3>
+                        <div class="community-stats">
+                            <p>Average Streak: <span id="avg-streak">0</span> 🔥</p>
+                            <p>Top Streak: <span id="top-streak">0</span> 🔥</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
